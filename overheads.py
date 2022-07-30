@@ -21,7 +21,7 @@ with file_path.open(mode = "r", encoding = "UTF-8", newline = "") as file:
 # Header is skipped due to `next()` before for loop
     for line in reader:
         for value in line:
-            empty_list.append[value]
+            empty_list.append(value)
             
             #check value in empty_list
             print (empty_list)
