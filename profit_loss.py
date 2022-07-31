@@ -3,7 +3,7 @@ import csv
 
 # trial 1
 
-file_path = Path.cwd()/"csv_reports"/"profit_loss.csv"
+#file_path = Path.cwd()/"csv_reports"/"profit_loss.csv"
 
 #profit_list = []
 #day_list = []
@@ -39,8 +39,8 @@ print(empty_list)
 
 new_list = []
 
-#for day in empty_list:
-#    if day[1] < len(day):
-#        print("fail")
-#    else:
-#        print("success")
+for day in empty_list:
+    if day[0] > day[1]:
+        print("fail")
+    else:
+        print("success")
