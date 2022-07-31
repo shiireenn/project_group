@@ -29,5 +29,10 @@ with file_path.open(mode = "r", encoding = "UTF-8", newline = "") as file:
     next(reader)
     
     for line in reader:
-        print(line)
+        line.pop(1)
+        line.pop(1)
+        line.pop(1)
+        empty_list.append(line)
+
+print(empty_list)
 
