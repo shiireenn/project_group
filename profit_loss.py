@@ -32,7 +32,15 @@ with file_path.open(mode = "r", encoding = "UTF-8", newline = "") as file:
         line.pop(1)
         line.pop(1)
         line.pop(1)
-        empty_list.append(line)
-
+        float_lst = [float(item) for item in line]
+        empty_list.append(float_lst)
+        
 print(empty_list)
 
+new_list = []
+
+#for day in empty_list:
+#    if day[1] < len(day):
+#        print("fail")
+#    else:
+#        print("success")
