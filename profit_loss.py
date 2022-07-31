@@ -29,19 +29,5 @@ with file_path.open(mode = "r", encoding = "UTF-8", newline = "") as file:
     next(reader)
     
     for line in reader:
-        empty_list.append(line[4])
-
-#empty_list[1].pop(-2)
-#empty_list.pop(-3)
-#empty_list.pop(-4)
-
-print(empty_list)
-
-#for day in range(empty_list):
-#
-#    if day < day - 1:
-#        print("fail")
-#
-#    else:
-#        print("success")
+        print(line)
 
