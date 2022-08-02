@@ -23,7 +23,11 @@ def main():
     
     file.close()    
 
+<<<<<<< HEAD
 main()
             
+=======
+
+>>>>>>> 39cb83c6781d8a6e5b1e59ebb6f25f3cbb3e4b6b
         
 
