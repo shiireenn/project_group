@@ -17,4 +17,9 @@ def main():
     cash_on_hand.cash_on_hand(forex)
     profit_loss.profitloss_function(forex)
 
+    with summary_path.open(mode = "w", encoding = "UTF-8", newline = "") as file:
+        for line in main:
+            file.writelines(line)
+            
+        
 
