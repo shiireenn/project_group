@@ -1,4 +1,3 @@
-#zandra
 from pathlib import Path
 import csv
 
@@ -11,5 +10,5 @@ def cash_on_hand_function():
             full_list.append(line)
         previous_day = 0
         value_difference = 0
-        
+
         
