@@ -21,26 +21,21 @@ import csv
 # trial 2
 
 file_path = Path.cwd()/"csv_reports"/"profit_loss.csv"
+#summary_path = Path.cwd/"csv_reports"/"summary_report.txt"
 
 empty_list = []
 
-with file_path.open(mode = "r", encoding = "UTF-8", newline = "") as file:
-    reader = csv.reader(file)
-    next(reader)
+def profitloss_function():
+    with file_path.open(mode = "r", encoding = "UTF-8", newline = "") as file:
+        reader = csv.reader(file)
+        next(reader)
     
-    for line in reader:
-        line.pop(1)
-        line.pop(1)
-        line.pop(1)
-        float_lst = [float(item) for item in line]
-        empty_list.append(float_lst)
+        for line in reader:
+            line.pop(1)
+            line.pop(1)
+            line.pop(1)
+            float_lst = [float(item) for item in line]
+            empty_list.append(float_lst)
         
 print(empty_list)
 
-new_list = []
-
-for day in empty_list:
-    if day[0] > day[1]:
-        print("fail")
-    else:
-        print("success")
