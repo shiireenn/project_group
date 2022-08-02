@@ -7,10 +7,10 @@ summary_path = Path.cwd()/"csv_reports"/"summmary_report.txt"
 # Create api_function
 def api_function():
     url = "https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=SGD&apikey=OX96WV3X7K2KBVZ5"
-    response = response.get(url)
+    response = requests.get(url)
     data = response.json()
     data = json.dumps(data, indent = 4)
-    data = re.search(pattern = 'Exchange Rate":,".+', string = data).group()
+    data = re.search(pattern = 'Exchange Rate": ".+', string = data).group
     data = float(data.replace('Exchange Rate": "','').strip('",'))
     with summary_path.open(mode = "a", encoding = "UTF-8", newline = "") as file:
         file.writelines("[REAL TIME CURRENCY CONVERSION RATE]" + "USD1 = SGD" + str(data) + "/n")
