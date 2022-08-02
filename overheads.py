@@ -32,8 +32,8 @@ with file_path.open(mode = "r", encoding = "UTF-8", newline = "") as file:
         category = data[0]
         percentage.append[data]
         highest = max(data)
-        highest_category = overheads{category}
+        highest_category = max{category}
         f"([HIGHEST_OVERHEADS] {highest_category.upper()} = {highest} %"
-        return message
+return message
 
 print(overheads_function())
