@@ -11,10 +11,9 @@ from pathlib import Path
 
 cwd_path = Path.cwd()/"PROJECT_GROUP"
 # # cwd_path.exists()
-summary_path = Path.cwd()/"PROJECT_GROUP"/"csv_reports"/"summary_report.txt"
+summary_path = Path.cwd()/"csv_reports"/"summary_report.txt"
 # # #creating csv file using .touch() method
-summary_path.exists()
-# summary_path.touch()
+summary_path.touch()
 
 
 
