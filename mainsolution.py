@@ -8,7 +8,7 @@ import requests
 cwd_path = Path.cwd()/"csv_reports"
 # Current working directory of summary_report.txt will be csv_report
 summary_path = Path.cwd()/"csv_reports"/"summary_report.txt"
-# Touch summary_path to csv_reports
+# creating summary_report.txt using .touch() from summary_path to csv_reports
 summary_path.touch()
 
 def main():
