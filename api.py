@@ -11,7 +11,8 @@ def api_function():
     data = response.json()
     data = json.dumps(data, indent = 4)
     data = re.search(pattern = 'Exchange Rate": ".+', string = data).group()
-    data = float(data.replace('Exchange Rate": "','').strip('",'))
+    forex = float(data.replace('Exchange Rate": "','').strip('",'))
     with summary_path.open(mode = "a", encoding = "UTF-8", newline = "") as file:
-        file.write("[REAL TIME CURRENCY CONVERSION RATE] " + "USD1 = SGD" + str(data))
-    
+        file.write("[REAL TIME CURRENCY CONVERSION RATE] " + "USD1 = SGD" + str(forex))
+    return forex
+   
