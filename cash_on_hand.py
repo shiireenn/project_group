@@ -8,6 +8,7 @@ import re
 #instantiate file path object to cash_on_hand.py file under csv_reports folder 
 file_path = Path.cwd()/"csv_reports"/"cash_on_hand.csv" 
 #instantiate file patch object to summary_report.txt file under csv_reports folder
+file_path = Path.cwd()/"csv_reports"/"Cash on Hand.csv"
 summary_path = Path.cwd()/"csv_reports"/"summary_report.txt"
 
 #creating a function called cash_on_hand_function

@@ -2,7 +2,7 @@ from pathlib import Path
 import re
 
 # Instantiate file path to csv_reports folder, profit_loss csv file
-file_path = Path.cwd()/"csv_reports"/"profit_loss.csv"
+file_path = Path.cwd()/"csv_reports"/"Profits and Loss.csv"
 # Instantiate file path to csv_reports folder, summary_report file
 summary_path = Path.cwd()/"csv_reports"/"summary_report.txt"
 
