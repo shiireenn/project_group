@@ -26,10 +26,10 @@ def overheads_function(forex):
             highest_value = overheads[key]
     for key, value in overheads.items():
         if value == highest_value:
-            if file_path.exists():
-                with file_path.open(mode = 'a', encoding = "UTF-8", errors = 'ignore') as file:
+            if summary_path.exists():
+                with summary_path.open(mode = 'a', encoding = "UTF-8", errors = 'ignore') as file:
                     message = file.write(f'\n[HIGHEST OVERHEADS] {key.upper()}: SGD{value:.2f}')
-                return message
+                return message    
 
 
 
