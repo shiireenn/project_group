@@ -8,7 +8,7 @@ summary_path = Path.cwd()/"csv_reports"/"summary_report.txt"
 
 def cash_on_hand_function(forex):
    """
-   This function highlights the days where cash on hand was lower than the previous day and also shows the value difference
+   -This function highlights the days where cash on hand was lower than the previous day and also shows the value difference as a deficit
    """
    with file_path.open(mode = 'r', encoding = 'UTF-8', newline = '') as file:
         next(file)
