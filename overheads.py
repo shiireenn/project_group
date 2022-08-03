@@ -4,7 +4,7 @@ from pathlib import Path
 #import csv module
 import csv
 
-file_path = Path.cwd()/"csv_reports"/"overheads.csv"
+file_path = Path.cwd()/"csv_reports"/"Overheads.csv"
 #current working directory of summary_report.txt will be csv_report
 summary_path = Path.cwd()/"csv_reports"/"summary_report.txt"
 
@@ -29,9 +29,9 @@ def overheads_function(forex):
             if file_path.exists():
                 with file_path.open(mode = 'a', encoding = "UTF-8", errors = 'ignore') as file:
                     message = file.write(f'\n[HIGHEST OVERHEADS] {key.upper()}: SGD{value:.2f}')
-                    return message
+                return message
 
-print(overheads_function(forex))
+
 
     #create and assign an empty list to 'percentage'
     #percentage = []
