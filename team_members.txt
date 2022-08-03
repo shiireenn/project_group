@@ -1,0 +1,11 @@
+Group Name: Yin Yang
+Class: TA02
+Course: Accountancy
+
+Name, Student ID
+
+1. Chai Kang Fu Brandon, S10240077F
+2. Goh Yu Rou Theophania, S10242421J
+3. Shireen Binte Mohamed Zulkifli, S10242256A
+4. Sng Jin Xiang, Jayden, S10243234
+5. Zandra Lee Yun Jia, S10242398B
