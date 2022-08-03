@@ -15,9 +15,8 @@ def main():
     overheads.overheads_function(forex)
     cash_on_hand.cash_on_hand_function(forex)
     profit_loss.profitloss_function(forex)
-
 main()
-            
+
 
         
 
