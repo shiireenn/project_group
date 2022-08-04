@@ -7,8 +7,8 @@ import re
 # Import requests
 import requests
 
-# Instantiate summary_path to csv_reports folder, summary_report file
-summary_path = Path.cwd()/"csv_reports"/"summary_report.txt"
+# Instantiate summary_path to summary_report.txt
+summary_path = Path.cwd()/"summary_report.txt"
 
 # Create a function named api_function
 def api_function():

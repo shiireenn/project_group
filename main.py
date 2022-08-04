@@ -3,12 +3,9 @@ from pathlib import Path
 # Import api.py,overheads.py, cash_on_hand.py and profit_loss.py
 import api, overheads, cash_on_hand, profit_loss
 
-
-# Instantiate cwd_path to csv_reports
-cwd_path = Path.cwd()/"csv_reports"
-# Instantiate cwd_path to csv_reports, summary_report.txt
-summary_path = Path.cwd()/"csv_reports"/"summary_report.txt"
-# Use .touch() to create summary_report.txt in csv_reports
+# Instantiate summary_path to summary_report.txt
+summary_path = Path.cwd()/"summary_report.txt"
+# Use .touch() to create summary_report.txt project_group
 summary_path.touch()
 
 # Create a function named main
