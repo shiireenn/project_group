@@ -1,9 +1,9 @@
 from pathlib import Path
 import re
 
-# Instantiate file path to csv_reports folder, profit_loss csv file
+# Instantiate file_path to csv_reports folder, profit_loss csv file
 file_path = Path.cwd()/"csv_reports"/"Profits and Loss.csv"
-# Instantiate file path to csv_reports folder, summary_report file
+# Instantiate summary_path to csv_reports folder, summary_report file
 summary_path = Path.cwd()/"csv_reports"/"summary_report.txt"
 
 # Create a function named profitloss_function
