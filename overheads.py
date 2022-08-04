@@ -30,30 +30,3 @@ def overheads_function(forex):
                 with summary_path.open(mode = 'a', encoding = "UTF-8", errors = 'ignore') as file:
                     message = file.write(f'\n[HIGHEST OVERHEADS] {key.upper()}: SGD{value:.2f}')
                 return message    
-
-
-
-    #create and assign an empty list to 'percentage'
-    #percentage = []
-   #overheads = {}
-
-    #create 'reader' object and print line if file path exists
-    #with file_path.open(mode = "r", encoding = "UTF-8", newline = "") as file:
-    #instantiate a read object
-        #reader = csv.reader(file)
-    #use 'next()' to skip Header
-    #next(reader)
-
-    # Create nested loop to access each value in the list
-    # and append the value to 'percentage'.
-    # Header is skipped due to `next()` before for loop
-        #for line in reader:
-            #data = float(line)
-            #category = line[0]
-            #percentage.append()
-            #highest = max(data)
-            #highest_category = category
-            #message = f"([HIGHEST_OVERHEADS]) {highest_category.upper()} = {highest} %"
-            #return message
-
-#print(overheads_function())

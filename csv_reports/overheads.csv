@@ -1,12 +1,10 @@
-"Category","Overheads"
-"Salary Expense",28.67
-"Interest Expense",0.55
-"Marketing Expense",2.53
-"Rental Expense",23.42
-"Penalty Expense",6.85
-"Depreciation Expense",8.33
-"Maintenance Expense",4.58
-"Shipping Expense",0.27
-"Human Resource Expense",24.8
-
-
+Category,Overheads
+Salary Expense,28.67
+Interest Expense,0.55
+Marketing Expense,2.53
+Rental Expense,23.42
+Penalty Expense,6.85
+Depreciation Expense,8.33
+Maintenance Expense,4.58
+Shipping Expense,0.27
+Human Resource Expense,24.8
