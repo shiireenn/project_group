@@ -1,59 +1,71 @@
-#theo
-#import Path function from pathlib
+# Import Path function from pathlib
 from pathlib import Path
-#import csv module
+# Import csv module
 import csv
 
-file_path = Path.cwd()/"csv_reports"/"overheads.csv"
-#current working directory of summary_report.txt will be csv_report
-summary_path = Path.cwd()/"csv_reports"/"summary_report.txt"
+# Instantiate file_path to csv_reports folder, Overheads csv file
+file_path = Path.cwd()/"csv_reports"/"Overheads.csv"
+# Instantiate summary_path to summary_report.txt file
+summary_path = Path.cwd()/"summary_report.txt"
 
+<<<<<<< HEAD
 #create a function 'overheads_function(forex)' that returns the highest overheads after the foreign exchange rate.
 def overheads_function(forex):
     """
     This function returns the category and highest overheads after the foreign exchange rate.
+=======
+# Create a function named overheads_fucntion
+def overheads_function(forex):
     """
+    - This function returns the category with the highest overheads in percentage terms
+    - This function will convert the highest overheads from USD to SGD
+>>>>>>> d8cbd49595a109609dcc90f65de9ca31ac9297a7
+    """
+    # Check if file_path exists
     if file_path.exists():
+
+        # Open file_path
         with file_path.open(mode = 'r', encoding = 'UTF-8', errors = 'ignore') as files:
+            
+            # Use .reader() to read the file
             reader = csv.reader(files)
+            # Set overheads as dictionary
             overheads = {}
+            # Use next to skip the headers
             next(reader)
+
+            # Use for loop to iterate through reader
             for category in reader:
+                
+                # Convert the overhead from USD to SGD
                 overheads[category[0]] = float(category[1]) * forex
+
+    # Value of highest_value will be 0            
     highest_value = 0
+
+    # Use for loop to iterathe through overheads
     for key in overheads:
+
+        # Use if to only execute the code when highest_value is less than overheads[key]
         if overheads[key] > highest_value:
+
+            # Use varibale highest_value
             highest_value = overheads[key]
+
+    # Use for loop to iterate through key and value        
     for key, value in overheads.items():
+
+        # Use if to only execute the code when value equals to highest_value
         if value == highest_value:
-            if file_path.exists():
-                with file_path.open(mode = 'a', encoding = "UTF-8", errors = 'ignore') as file:
+
+            # Check if summary_path exists
+            if summary_path.exists():
+
+                # Open summary_path and append
+                with summary_path.open(mode = 'a', encoding = "UTF-8", errors = 'ignore') as file:
+                    
+                    # Use .write() to write into summary_path
                     message = file.write(f'\n[HIGHEST OVERHEADS] {key.upper()}: SGD{value:.2f}')
-                    return message
-
-print(overheads_function(forex))
-
-    #create and assign an empty list to 'percentage'
-    #percentage = []
-   #overheads = {}
-
-    #create 'reader' object and print line if file path exists
-    #with file_path.open(mode = "r", encoding = "UTF-8", newline = "") as file:
-    #instantiate a read object
-        #reader = csv.reader(file)
-    #use 'next()' to skip Header
-    #next(reader)
-
-    # Create nested loop to access each value in the list
-    # and append the value to 'percentage'.
-    # Header is skipped due to `next()` before for loop
-        #for line in reader:
-            #data = float(line)
-            #category = line[0]
-            #percentage.append()
-            #highest = max(data)
-            #highest_category = category
-            #message = f"([HIGHEST_OVERHEADS]) {highest_category.upper()} = {highest} %"
-            #return message
-
-#print(overheads_function())
+                
+                # Return the data in message
+                return message    
