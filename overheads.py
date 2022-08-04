@@ -8,18 +8,15 @@ file_path = Path.cwd()/"csv_reports"/"Overheads.csv"
 # Instantiate summary_path to summary_report.txt file
 summary_path = Path.cwd()/"summary_report.txt"
 
-<<<<<<< HEAD
 #create a function 'overheads_function(forex)' that returns the highest overheads after the foreign exchange rate.
 def overheads_function(forex):
     """
     This function returns the category and highest overheads after the foreign exchange rate.
-=======
 # Create a function named overheads_fucntion
 def overheads_function(forex):
     """
     - This function returns the category with the highest overheads in percentage terms
     - This function will convert the highest overheads from USD to SGD
->>>>>>> d8cbd49595a109609dcc90f65de9ca31ac9297a7
     """
     # Check if file_path exists
     if file_path.exists():
