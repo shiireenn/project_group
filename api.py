@@ -1,15 +1,20 @@
+# Import Path function from pathlib
 from pathlib import Path
+# Import json
 import json
+# Import re
 import re
+# Import requests
 import requests
 
-# Instantiate file path to csv_reports folder, summary_report file
+# Instantiate summary_path to csv_reports folder, summary_report file
 summary_path = Path.cwd()/"csv_reports"/"summary_report.txt"
 
 # Create a function named api_function
 def api_function():
     """
-    - This function will retrieve the currency exchange rate from USD to SGD
+    - This function will retrieve the currency exchange rate of USD and SGD
+    - This function will convert the amount of money from USD to SGD
     """
     # Assign the API URL to url
     url = "https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=SGD&apikey=OX96WV3X7K2KBVZ5"
