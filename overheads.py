@@ -8,10 +8,10 @@ file_path = Path.cwd()/"csv_reports"/"overheads.csv"
 #current working directory of summary_report.txt will be csv_report
 summary_path = Path.cwd()/"csv_reports"/"summary_report.txt"
 
-#create a function 'overheads_category' that returns the highest category of overheads
+#create a function 'overheads_function(forex)' that returns the highest overheads after the foreign exchange rate.
 def overheads_function(forex):
     """
-    This function returns the category with the highest overheads in percentage.
+    This function returns the category and highest overheads after the foreign exchange rate.
     """
     if file_path.exists():
         with file_path.open(mode = 'r', encoding = 'UTF-8', errors = 'ignore') as files:
