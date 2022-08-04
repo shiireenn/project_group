@@ -36,13 +36,13 @@ def overheads_function(forex):
     # Value of highest_value will be 0            
     highest_value = 0
 
-    # Use for loop to iterathe through overheads
+    # Use for loop to iterate through overheads
     for key in overheads:
 
         # Use if to only execute the code when highest_value is less than overheads[key]
         if overheads[key] > highest_value:
 
-            # Use varibale highest_value
+            # Use variable highest_value
             highest_value = overheads[key]
 
     # Use for loop to iterate through key and value        
